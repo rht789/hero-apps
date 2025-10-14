@@ -12,6 +12,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        loader: () => fetch("/AppsData.json"),
       },
       {
         path: "*",

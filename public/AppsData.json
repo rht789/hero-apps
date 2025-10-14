@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1611162616305-7c99bdb8a2b3",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
     "title": "Notion",
     "companyName": "Notion Labs, Inc.",
     "id": 1,
@@ -8,7 +8,7 @@
     "size": 85,
     "reviews": 154230,
     "ratingAvg": 4.7,
-    "downloads": 10000000,
+    "downloads": "10M",
     "ratings": [
       { "name": "1 star", "count": 3200 },
       { "name": "2 star", "count": 2700 },
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1584697964403-5e5bcd9a2e11",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png",
     "title": "Spotify",
     "companyName": "Spotify AB",
     "id": 2,
@@ -26,7 +26,7 @@
     "size": 95,
     "reviews": 642130,
     "ratingAvg": 4.6,
-    "downloads": 100000000,
+    "downloads": "100M",
     "ratings": [
       { "name": "1 star", "count": 9000 },
       { "name": "2 star", "count": 14000 },
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1602080754943-37a4eabda4d2",
+    "image": "https://static.vecteezy.com/system/resources/previews/047/657/562/non_2x/canva-3d-icon-free-png.png",
     "title": "Canva",
     "companyName": "Canva Pty Ltd",
     "id": 3,
@@ -44,7 +44,7 @@
     "size": 112,
     "reviews": 214000,
     "ratingAvg": 4.8,
-    "downloads": 50000000,
+    "downloads": "50M",
     "ratings": [
       { "name": "1 star", "count": 2000 },
       { "name": "2 star", "count": 3000 },
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1614680376408-81e91ffe3a1d",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png",
     "title": "Slack",
     "companyName": "Slack Technologies",
     "id": 4,
@@ -62,7 +62,7 @@
     "size": 78,
     "reviews": 128340,
     "ratingAvg": 4.4,
-    "downloads": 10000000,
+    "downloads": "10M",
     "ratings": [
       { "name": "1 star", "count": 2500 },
       { "name": "2 star", "count": 4700 },
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+    "image": "https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/250/duolingo-logo-new-512.png",
     "title": "Duolingo",
     "companyName": "Duolingo Inc.",
     "id": 5,
@@ -80,7 +80,7 @@
     "size": 52,
     "reviews": 987650,
     "ratingAvg": 4.8,
-    "downloads": 100000000,
+    "downloads": "100M",
     "ratings": [
       { "name": "1 star", "count": 15000 },
       { "name": "2 star", "count": 18000 },
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1628157588553-5f3cba97d6c1",
+    "image": "https://www.healthysandwell.co.uk/wp-content/uploads/2024/06/Mental-Health-Directory-Images-12.png",
     "title": "Headspace",
     "companyName": "Headspace Health",
     "id": 6,
@@ -98,7 +98,7 @@
     "size": 61,
     "reviews": 312000,
     "ratingAvg": 4.7,
-    "downloads": 20000000,
+    "downloads": "20M",
     "ratings": [
       { "name": "1 star", "count": 4000 },
       { "name": "2 star", "count": 5200 },
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810431",
+    "image": "https://images.seeklogo.com/logo-png/38/2/zoom-fondo-blanco-vertical-logo-png_seeklogo-381383.png",
     "title": "Zoom",
     "companyName": "Zoom Video Communications",
     "id": 7,
@@ -116,7 +116,7 @@
     "size": 130,
     "reviews": 1890000,
     "ratingAvg": 4.5,
-    "downloads": 500000000,
+    "downloads": "500M",
     "ratings": [
       { "name": "1 star", "count": 55000 },
       { "name": "2 star", "count": 64000 },
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1611996575749-79a3a250f7e8",
+    "image": "https://img.icons8.com/color/600/todoist.png",
     "title": "Todoist",
     "companyName": "Doist Inc.",
     "id": 8,
@@ -134,7 +134,7 @@
     "size": 48,
     "reviews": 87600,
     "ratingAvg": 4.6,
-    "downloads": 10000000,
+    "downloads": "10M",
     "ratings": [
       { "name": "1 star", "count": 1300 },
       { "name": "2 star", "count": 2100 },
@@ -143,221 +143,220 @@
       { "name": "5 star", "count": 60600 }
     ]
   },
-    {
-      "image": "https://images.unsplash.com/photo-1551817958-20204c6e88a0",
-      "title": "Instagram",
-      "companyName": "Meta Platforms, Inc.",
-      "id": 9,
-      "description": "Share photos, reels, and stories. Connect with friends and creators worldwide.",
-      "size": 72,
-      "reviews": 4060000,
-      "ratingAvg": 4.5,
-      "downloads": 1000000000,
-      "ratings": [
-        { "name": "1 star", "count": 80000 },
-        { "name": "2 star", "count": 60000 },
-        { "name": "3 star", "count": 200000 },
-        { "name": "4 star", "count": 700000 },
-        { "name": "5 star", "count": 3020000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa",
-      "title": "WhatsApp Messenger",
-      "companyName": "WhatsApp LLC",
-      "id": 10,
-      "description": "Fast, simple, secure messaging and calling for free, available on phones worldwide.",
-      "size": 40,
-      "reviews": 5125000,
-      "ratingAvg": 4.7,
-      "downloads": 5000000000,
-      "ratings": [
-        { "name": "1 star", "count": 90000 },
-        { "name": "2 star", "count": 110000 },
-        { "name": "3 star", "count": 290000 },
-        { "name": "4 star", "count": 1000000 },
-        { "name": "5 star", "count": 3635000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
-      "title": "Telegram",
-      "companyName": "Telegram FZ-LLC",
-      "id": 11,
-      "description": "Fast and secure messaging with large groups, channels, and cloud sync.",
-      "size": 52,
-      "reviews": 1750000,
-      "ratingAvg": 4.6,
-      "downloads": 1000000000,
-      "ratings": [
-        { "name": "1 star", "count": 25000 },
-        { "name": "2 star", "count": 35000 },
-        { "name": "3 star", "count": 120000 },
-        { "name": "4 star", "count": 450000 },
-        { "name": "5 star", "count": 1120000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796",
-      "title": "Photoshop Express",
-      "companyName": "Adobe",
-      "id": 12,
-      "description": "Quick photo edits with filters, retouching, collages, and content-aware tools.",
-      "size": 134,
-      "reviews": 820000,
-      "ratingAvg": 4.4,
-      "downloads": 100000000,
-      "ratings": [
-        { "name": "1 star", "count": 24000 },
-        { "name": "2 star", "count": 38000 },
-        { "name": "3 star", "count": 125000 },
-        { "name": "4 star", "count": 270000 },
-        { "name": "5 star", "count": 363000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1587614382346-4ec71c1789a1",
-      "title": "Microsoft Teams",
-      "companyName": "Microsoft",
-      "id": 13,
-      "description": "Chats, meetings, and collaboration for organizations and schools.",
-      "size": 146,
-      "reviews": 1130000,
-      "ratingAvg": 4.3,
-      "downloads": 500000000,
-      "ratings": [
-        { "name": "1 star", "count": 60000 },
-        { "name": "2 star", "count": 75000 },
-        { "name": "3 star", "count": 210000 },
-        { "name": "4 star", "count": 340000 },
-        { "name": "5 star", "count": 450000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1557800636-894a64c1696f",
-      "title": "Asana",
-      "companyName": "Asana, Inc.",
-      "id": 14,
-      "description": "Plan, organize, and track work. Tasks, timelines, and team collaboration made easy.",
-      "size": 63,
-      "reviews": 245000,
-      "ratingAvg": 4.6,
-      "downloads": 10000000,
-      "ratings": [
-        { "name": "1 star", "count": 4000 },
-        { "name": "2 star", "count": 7000 },
-        { "name": "3 star", "count": 30000 },
-        { "name": "4 star", "count": 80000 },
-        { "name": "5 star", "count": 124000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
-      "title": "Trello",
-      "companyName": "Atlassian",
-      "id": 15,
-      "description": "Boards, lists, and cards to organize projects and tasks visually.",
-      "size": 52,
-      "reviews": 387000,
-      "ratingAvg": 4.5,
-      "downloads": 50000000,
-      "ratings": [
-        { "name": "1 star", "count": 7000 },
-        { "name": "2 star", "count": 12000 },
-        { "name": "3 star", "count": 52000 },
-        { "name": "4 star", "count": 125000 },
-        { "name": "5 star", "count": 191000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1506702315536-dd8b83e2dcf9",
-      "title": "Google Maps",
-      "companyName": "Google LLC",
-      "id": 16,
-      "description": "Real-time GPS navigation, traffic, and transit info with detailed maps.",
-      "size": 98,
-      "reviews": 5900000,
-      "ratingAvg": 4.6,
-      "downloads": 10000000000,
-      "ratings": [
-        { "name": "1 star", "count": 120000 },
-        { "name": "2 star", "count": 160000 },
-        { "name": "3 star", "count": 520000 },
-        { "name": "4 star", "count": 1500000 },
-        { "name": "5 star", "count": 3600000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1519241047957-be31d7379a5d",
-      "title": "YouTube",
-      "companyName": "Google LLC",
-      "id": 17,
-      "description": "Watch, upload, and share videos from creators around the world.",
-      "size": 115,
-      "reviews": 8120000,
-      "ratingAvg": 4.7,
-      "downloads": 10000000000,
-      "ratings": [
-        { "name": "1 star", "count": 150000 },
-        { "name": "2 star", "count": 210000 },
-        { "name": "3 star", "count": 680000 },
-        { "name": "4 star", "count": 2100000 },
-        { "name": "5 star", "count": 4980000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1611162618071-b39a2ec2cfb3",
-      "title": "Reddit",
-      "companyName": "Reddit Inc.",
-      "id": 18,
-      "description": "Dive into communities for every interest. News, memes, AMAs, and more.",
-      "size": 64,
-      "reviews": 1630000,
-      "ratingAvg": 4.4,
-      "downloads": 100000000,
-      "ratings": [
-        { "name": "1 star", "count": 45000 },
-        { "name": "2 star", "count": 60000 },
-        { "name": "3 star", "count": 210000 },
-        { "name": "4 star", "count": 500000 },
-        { "name": "5 star", "count": 810000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-      "title": "Snapchat",
-      "companyName": "Snap Inc.",
-      "id": 19,
-      "description": "Share moments with friends using snaps, lenses, and stories.",
-      "size": 75,
-      "reviews": 2980000,
-      "ratingAvg": 4.3,
-      "downloads": 1000000000,
-      "ratings": [
-        { "name": "1 star", "count": 90000 },
-        { "name": "2 star", "count": 130000 },
-        { "name": "3 star", "count": 420000 },
-        { "name": "4 star", "count": 900000 },
-        { "name": "5 star", "count": 1440000 }
-      ]
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
-      "title": "Pinterest",
-      "companyName": "Pinterest, Inc.",
-      "id": 20,
-      "description": "Discover and save creative ideas—from recipes to home decor and style.",
-      "size": 56,
-      "reviews": 2210000,
-      "ratingAvg": 4.7,
-      "downloads": 500000000,
-      "ratings": [
-        { "name": "1 star", "count": 30000 },
-        { "name": "2 star", "count": 40000 },
-        { "name": "3 star", "count": 160000 },
-        { "name": "4 star", "count": 600000 },
-        { "name": "5 star", "count": 1280000 }
-      ]
-    }
-
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 9,
+    "description": "Share photos, reels, and stories. Connect with friends and creators worldwide.",
+    "size": 72,
+    "reviews": 4060000,
+    "ratingAvg": 4.5,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 3020000 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-clipart/20190516/original/pngtree-whatsapp-icon-png-image_3584844.jpg",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 10,
+    "description": "Fast, simple, secure messaging and calling for free, available on phones worldwide.",
+    "size": 40,
+    "reviews": 5125000,
+    "ratingAvg": 4.7,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 110000 },
+      { "name": "3 star", "count": 290000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 3635000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 11,
+    "description": "Fast and secure messaging with large groups, channels, and cloud sync.",
+    "size": 52,
+    "reviews": 1750000,
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 1120000 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/038/600/554/small_2x/adobe-photoshop-logos-adobe-icons-abstract-art-free-vector.jpg",
+    "title": "Photoshop Express",
+    "companyName": "Adobe",
+    "id": 12,
+    "description": "Quick photo edits with filters, retouching, collages, and content-aware tools.",
+    "size": 134,
+    "reviews": 820000,
+    "ratingAvg": 4.4,
+    "downloads": "100M",
+    "ratings": [
+      { "name": "1 star", "count": 24000 },
+      { "name": "2 star", "count": 38000 },
+      { "name": "3 star", "count": 125000 },
+      { "name": "4 star", "count": 270000 },
+      { "name": "5 star", "count": 363000 }
+    ]
+  },
+  {
+    "image": "https://icon2.cleanpng.com/20190506/rqo/kisspng-microsoft-teams-office-365-microsoft-office-micros-1713893117588.webp",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft",
+    "id": 13,
+    "description": "Chats, meetings, and collaboration for organizations and schools.",
+    "size": 146,
+    "reviews": 1130000,
+    "ratingAvg": 4.3,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 75000 },
+      { "name": "3 star", "count": 210000 },
+      { "name": "4 star", "count": 340000 },
+      { "name": "5 star", "count": 450000 }
+    ]
+  },
+  {
+    "image": "https://e7.pngegg.com/pngimages/340/819/png-clipart-asana-logo-illustration-asana-logo-icons-logos-emojis-tech-companies.png",
+    "title": "Asana",
+    "companyName": "Asana, Inc.",
+    "id": 14,
+    "description": "Plan, organize, and track work. Tasks, timelines, and team collaboration made easy.",
+    "size": 63,
+    "reviews": 245000,
+    "ratingAvg": 4.6,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 124000 }
+    ]
+  },
+  {
+    "image": "https://e7.pngegg.com/pngimages/26/74/png-clipart-trello-logo-slack-atlassian-trello-blue-text-thumbnail.png",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "id": 15,
+    "description": "Boards, lists, and cards to organize projects and tasks visually.",
+    "size": 52,
+    "reviews": 387000,
+    "ratingAvg": 4.5,
+    "downloads": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 52000 },
+      { "name": "4 star", "count": 125000 },
+      { "name": "5 star", "count": 191000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/512px-Google_Maps_icon_%282020%29.svg.png",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 16,
+    "description": "Real-time GPS navigation, traffic, and transit info with detailed maps.",
+    "size": 98,
+    "reviews": 5900000,
+    "ratingAvg": 4.6,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 160000 },
+      { "name": "3 star", "count": 520000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 3600000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 17,
+    "description": "Watch, upload, and share videos from creators around the world.",
+    "size": 115,
+    "reviews": 8120000,
+    "ratingAvg": 4.7,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 210000 },
+      { "name": "3 star", "count": 680000 },
+      { "name": "4 star", "count": 2100000 },
+      { "name": "5 star", "count": 4980000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Reddit_Logo_Icon.svg/250px-Reddit_Logo_Icon.svg.png",
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
+    "id": 18,
+    "description": "Dive into communities for every interest. News, memes, AMAs, and more.",
+    "size": 64,
+    "reviews": 1630000,
+    "ratingAvg": 4.4,
+    "downloads": "100M",
+    "ratings": [
+      { "name": "1 star", "count": 45000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 210000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 810000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/it/thumb/c/c4/Snapchat_logo.svg/1200px-Snapchat_logo.svg.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 19,
+    "description": "Share moments with friends using snaps, lenses, and stories.",
+    "size": 75,
+    "reviews": 2980000,
+    "ratingAvg": 4.3,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 130000 },
+      { "name": "3 star", "count": 420000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 1440000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-wY79b6NNeHIWXtpLlLLKtAipj80Ch0Yaw&s",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 20,
+    "description": "Discover and save creative ideas—from recipes to home decor and style.",
+    "size": 56,
+    "reviews": 2210000,
+    "ratingAvg": 4.7,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 160000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1280000 }
+    ]
+  }
 ]
