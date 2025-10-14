@@ -6,7 +6,7 @@ const AppCard = ({app}) => {
     const { image, title, ratingAvg, downloads} = app;
     return (
       <div className="card bg-white hover:bg-gray-100 w-fit shadow-sm">
-        <figure className='p-4'>
+        <figure className='p-4 w-[300px] h-[300px] flex items-center justify-center'>
           <img src={image} alt={`${title}'s image`} />
         </figure>
         <div className="card-body">
