@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../AppCard/AppCard";
 import { AiTwotoneAppstore } from "react-icons/ai";
 
 const AllApps = () => {
   const allApps = useLoaderData();
+  const [searchValue, setSearchValue] = useState("");
+  const filteredApps = allApps.filter((app) =>
+    app.title.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
+  const handleSearch = (e) => {
+    setSearchValue(e.target.value);
+  };
+
   console.log(allApps);
   return (
     <div>
@@ -19,18 +28,19 @@ const AllApps = () => {
       </div>
 
       <div className="flex justify-between items-center px-20 ">
-        <p>{`(${allApps.length}) App Found`}</p>
+        <p>{`(${filteredApps.length}) App Found`}</p>
         <form>
           <input
             type="text"
             placeholder="Search Your App"
             className="input input-bordered input-primary w-full max-w-xs"
+            onChange={(e) => handleSearch(e)}
           />
         </form>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-20 py-8">
-        {allApps.map((app) => (
+        {filteredApps.map((app) => (
           <AppCard key={app.id} app={app}></AppCard>
         ))}
       </div>
