@@ -31,7 +31,7 @@ const Navbar = () => {
         Apps
       </NavLink>
       <NavLink
-        to="/installation"
+        to="/installedApps"
         className={({ isActive }) =>
           `flex gap-1 justify-center items-center mx-2 px-3 py-2 rounded-lg transition-colors font-semibold ${
             isActive
@@ -40,7 +40,7 @@ const Navbar = () => {
           }`
         }
       >
-        Installation
+        Installed Apps
       </NavLink>
     </>
   );

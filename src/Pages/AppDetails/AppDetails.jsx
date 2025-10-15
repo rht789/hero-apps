@@ -4,6 +4,7 @@ import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
 import AppNotFound from "../../Component/ErrorPage/AppNotFound";
+import { toast } from "react-toastify";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -47,6 +48,9 @@ const AppDetails = () => {
       const updatedApps = [...installedApps, parsedAppId];
       localStorage.setItem("installedApps", JSON.stringify(updatedApps));
       setIsInstalled(true);
+
+      // Show success toast message
+      toast.success(`${app.title} has been installed successfully!`);
     }
   };
 
