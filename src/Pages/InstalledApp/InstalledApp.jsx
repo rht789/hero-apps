@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { useLoaderData } from "react-router";
 import { AiTwotoneAppstore } from "react-icons/ai";
 import { toast } from "react-toastify";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
+import Loader from "../../Component/Loader/Loader";
+import useApps from "../../hooks/useApps";
 
 const InstalledApp = () => {
-  const allApps = useLoaderData();
+  const { apps: allApps, loading } = useApps();
   const [installedApps, setInstalledApps] = useState([]);
   const [sortBy, setSortBy] = useState("");
 
   useEffect(() => {
-    const installedAppIds = JSON.parse(
-      localStorage.getItem("installedApps") || "[]"
-    );
-    const installedAppData = allApps.filter((app) =>
-      installedAppIds.includes(app.id)
-    );
-    setInstalledApps(installedAppData);
+    if (allApps.length > 0) {
+      const installedAppIds = JSON.parse(
+        localStorage.getItem("installedApps") || "[]"
+      );
+      const installedAppData = allApps.filter((app) =>
+        installedAppIds.includes(app.id)
+      );
+      setInstalledApps(installedAppData);
+    }
   }, [allApps]);
+
+  if (loading) return <Loader />;
 
   const handleUninstall = (appId, appTitle) => {
     const installedAppIds = JSON.parse(
@@ -123,12 +128,16 @@ const InstalledApp = () => {
                   <div className="flex items-center gap-4 text-sm text-gray-600 mt-1">
                     <div className="flex items-center">
                       <img src={downloadIcon} className="w-4 h-4 " alt="" />
-                      
-                      <p className="font-semibold text-green-400">{app.downloads}</p>
+
+                      <p className="font-semibold text-green-400">
+                        {app.downloads}
+                      </p>
                     </div>
                     <div className="flex items-center">
                       <img src={ratingIcon} className="w-4 h-4 " alt="" />
-                      <p className="font-semibold text-orange-400">{app.ratingAvg}</p>
+                      <p className="font-semibold text-orange-400">
+                        {app.ratingAvg}
+                      </p>
                     </div>
                     <span className="font-semibold">{app.size} MB</span>
                   </div>

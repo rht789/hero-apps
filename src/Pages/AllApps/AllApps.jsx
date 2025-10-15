@@ -1,19 +1,51 @@
-import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import React, { useState, useEffect } from "react";
 import AppCard from "../AppCard/AppCard";
 import { AiTwotoneAppstore } from "react-icons/ai";
 import AppNotFound from "../../Component/ErrorPage/AppNotFound";
+import Loader from "../../Component/Loader/Loader";
+import useApps from "../../hooks/useApps";
 
 const AllApps = () => {
-  const allApps = useLoaderData();
+  const { apps: allApps, loading } = useApps();
   const [searchValue, setSearchValue] = useState("");
-  const filteredApps = allApps.filter((app) =>
-    app.title.toLowerCase().includes(searchValue.toLowerCase())
-  );
+  const [isLoading, setIsLoading] = useState(false);
+  const [filteredApps, setFilteredApps] = useState([]);
+
+  // Debounced search effect
+  useEffect(() => {
+    if (!allApps.length) return;
+
+    if (searchValue === "") {
+      setFilteredApps(allApps);
+      setIsLoading(false);
+      return;
+    }
+
+    setIsLoading(true);
+
+    const debounceTimer = setTimeout(() => {
+      const filtered = allApps.filter((app) =>
+        app.title.toLowerCase().includes(searchValue.toLowerCase())
+      );
+      setFilteredApps(filtered);
+      setIsLoading(false);
+    }, 300); // 300ms delay
+
+    return () => clearTimeout(debounceTimer);
+  }, [searchValue, allApps]);
+
+  // Initialize filtered apps when allApps loads
+  useEffect(() => {
+    if (allApps.length > 0) {
+      setFilteredApps(allApps);
+    }
+  }, [allApps]);
 
   const handleSearch = (e) => {
     setSearchValue(e.target.value);
   };
+
+  if (loading) return <Loader />;
 
   console.log(allApps);
   return (
@@ -41,14 +73,18 @@ const AllApps = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-20 py-8">
-        {filteredApps.length > 0 ? (
+        {isLoading ? (
+          <div className="col-span-full">
+            <Loader />
+          </div>
+        ) : filteredApps.length > 0 ? (
           filteredApps.map((app) => <AppCard key={app.id} app={app}></AppCard>)
         ) : searchValue ? (
           <div className="col-span-full">
             <AppNotFound />
           </div>
         ) : (
-          allApps.map((app) => <AppCard key={app.id} app={app}></AppCard>)
+          filteredApps.map((app) => <AppCard key={app.id} app={app}></AppCard>)
         )}
       </div>
     </div>

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
 import AppNotFound from "../../Component/ErrorPage/AppNotFound";
 import { toast } from "react-toastify";
+import Loader from "../../Component/Loader/Loader";
+import useApps from "../../hooks/useApps";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -26,7 +28,7 @@ ChartJS.register(
 );
 
 const AppDetails = () => {
-  const apps = useLoaderData();
+  const { apps, loading } = useApps();
   const { appId } = useParams();
   const parsedAppId = parseInt(appId);
 
@@ -53,6 +55,8 @@ const AppDetails = () => {
       toast.success(`${app.title} has been installed successfully!`);
     }
   };
+
+  if (loading) return <Loader />;
 
   const app = apps.find((app) => app.id === parsedAppId);
 
