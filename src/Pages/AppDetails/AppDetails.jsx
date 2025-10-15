@@ -51,7 +51,6 @@ const AppDetails = () => {
       localStorage.setItem("installedApps", JSON.stringify(updatedApps));
       setIsInstalled(true);
 
-      // Show success toast message
       toast.success(`${app.title} has been installed successfully!`);
     }
   };
@@ -75,9 +74,6 @@ const AppDetails = () => {
     size,
     ratings,
   } = app;
-  console.log("appId:", parsedAppId);
-  console.log("app:", app);
-  console.log("ratings data:", ratings);
 
   return (
     <div className="mx-4 md:mx-8">

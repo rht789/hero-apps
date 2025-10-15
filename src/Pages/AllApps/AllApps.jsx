@@ -11,7 +11,6 @@ const AllApps = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [filteredApps, setFilteredApps] = useState([]);
 
-  // Debounced search effect
   useEffect(() => {
     if (!allApps.length) return;
 
@@ -29,12 +28,11 @@ const AllApps = () => {
       );
       setFilteredApps(filtered);
       setIsLoading(false);
-    }, 300); // 300ms delay
+    }, 300);
 
     return () => clearTimeout(debounceTimer);
   }, [searchValue, allApps]);
 
-  // Initialize filtered apps when allApps loads
   useEffect(() => {
     if (allApps.length > 0) {
       setFilteredApps(allApps);
@@ -47,7 +45,6 @@ const AllApps = () => {
 
   if (loading) return <Loader />;
 
-  console.log(allApps);
   return (
     <div>
       <div className="my-8 text-center">
