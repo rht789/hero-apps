@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -77,12 +77,12 @@ const Navbar = () => {
             <img
               src={logoImg}
               alt="Logo of this app"
-              className="w-8 h-8 object-contain"
+              className="w-6 h-6 md:w-8 md:h-8 object-contain"
             />
-            <p>Hero.io</p>
+            <p className="text-base md:text-xl">Hero.io</p>
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">

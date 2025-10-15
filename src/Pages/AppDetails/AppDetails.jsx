@@ -80,39 +80,47 @@ const AppDetails = () => {
   console.log("ratings data:", ratings);
 
   return (
-    <div className="mx-8">
-      <div className="flex justify-start items-center gap-8 my-4 border-b-2 border-gray-300 pb-8">
-        <div className="w-[300px] h-[300px] flex items-center justify-center shadow-sm bg-white p-4">
-          <img src={image} alt="" />
+    <div className="mx-4 md:mx-8">
+      <div className="flex flex-col md:flex-row justify-start items-center gap-4 md:gap-8 my-4 border-b-2 border-gray-300 pb-6 md:pb-8">
+        <div className="w-48 h-48 md:w-[300px] md:h-[300px] flex items-center justify-center shadow-sm bg-white p-4">
+          <img
+            src={image}
+            alt=""
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
-        <div className="flex-1">
-          <div className="border-b-2 border-gray-300 pb-2 mb-2 ">
-            <h3 className="text-2xl font-semibold">{title}</h3>
+        <div className="flex-1 w-full">
+          <div className="border-b-2 border-gray-300 pb-2 mb-2 text-center md:text-left">
+            <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
             <p className="text-xs text-gray-500">
               Developed by{" "}
               <span className="text-violet-500">{companyName}</span>
             </p>
           </div>
-          <div className="flex gap-4 mt-4">
+          <div className="flex justify-center md:justify-start gap-4 mt-4">
             <div className="flex flex-col items-center">
               <img src={downloadIcon} className="w-4 h-4 " alt="" />
-              <p className="my-2 text-gray-500 text-sm">Downloads</p>
-              <p className="text-xl font-bold">{downloads}</p>
+              <p className="my-2 text-gray-500 text-xs md:text-sm">Downloads</p>
+              <p className="text-lg md:text-xl font-bold">{downloads}</p>
             </div>
             <div className="flex flex-col items-center">
               <img src={ratingIcon} className="w-4 h-4 " alt="" />
-              <p className="my-2 text-gray-500 text-sm">Average Rating</p>
-              <p className="text-xl font-bold">{ratingAvg}</p>
+              <p className="my-2 text-gray-500 text-xs md:text-sm">
+                Average Rating
+              </p>
+              <p className="text-lg md:text-xl font-bold">{ratingAvg}</p>
             </div>
             <div className="flex flex-col items-center">
               <img src={reviewIcon} className="w-4 h-4 " alt="" />
-              <p className="my-2 text-gray-500 text-sm">Total Reviews</p>
-              <p className="text-xl font-bold">{reviews}</p>
+              <p className="my-2 text-gray-500 text-xs md:text-sm">
+                Total Reviews
+              </p>
+              <p className="text-lg md:text-xl font-bold">{reviews}</p>
             </div>
           </div>
-          <div className="mt-4">
+          <div className="mt-4 text-center md:text-left">
             <button
-              className={`p-2 rounded-lg text-white transition-colors duration-200 ${
+              className={`p-2 md:p-3 rounded-lg text-white transition-colors duration-200 text-sm md:text-base ${
                 isInstalled
                   ? "bg-gray-400 cursor-not-allowed"
                   : "bg-[#00d390] hover:bg-[#00c085]"

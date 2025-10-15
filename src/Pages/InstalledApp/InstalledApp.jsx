@@ -66,23 +66,23 @@ const InstalledApp = () => {
 
   return (
     <div>
-      <div className="my-8 text-center">
-        <h1 className="flex items-center justify-center font-bold gap-1 text-4xl mb-2">
+      <div className="my-8 text-center px-4">
+        <h1 className="flex items-center justify-center font-bold gap-1 text-2xl md:text-4xl mb-2">
           Your Installed Apps{" "}
           <AiTwotoneAppstore className="text-violet-600"></AiTwotoneAppstore>
         </h1>
-        <p className="text-xs text-gray-500">
+        <p className="text-xs md:text-sm text-gray-500">
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
 
-      <div className="flex justify-between items-center px-20 mb-6">
-        <p className="text-[#632EE3] font-semibold">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-20 mb-6 gap-4 md:gap-0">
+        <p className="text-[#632EE3] font-semibold text-sm md:text-base">
           {installedApps.length} Apps Found
         </p>
-        <div className="relative">
+        <div className="relative w-full md:w-auto">
           <select
-            className="select select-bordered select-primary w-full max-w-xs bg-white"
+            className="select select-bordered select-primary w-full md:max-w-xs bg-white text-sm md:text-base"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
           >
@@ -94,47 +94,54 @@ const InstalledApp = () => {
       </div>
 
       {installedApps.length === 0 ? (
-        <div className="text-center py-20">
+        <div className="text-center py-12 md:py-20 px-4">
           <div className="mb-8">
-            <AiTwotoneAppstore className="text-6xl text-gray-300 mx-auto mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-600 mb-2">
+            <AiTwotoneAppstore className="text-4xl md:text-6xl text-gray-300 mx-auto mb-4" />
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-600 mb-2">
               No Apps Installed
             </h3>
-            <p className="text-gray-500">
+            <p className="text-gray-500 text-sm md:text-base max-w-md mx-auto">
               You haven't installed any apps yet. Browse our app store to find
               amazing apps!
             </p>
           </div>
         </div>
       ) : (
-        <div className="px-20 py-4">
+        <div className="px-4 md:px-20 py-4">
           {sortedApps().map((app) => (
             <div
               key={app.id}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-4 flex items-center justify-between hover:shadow-md transition-shadow duration-200"
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 md:p-4 mb-4 flex flex-col md:flex-row items-center justify-between hover:shadow-md transition-shadow duration-200 gap-4 md:gap-0"
             >
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 flex items-center justify-center bg-gray-50 rounded-lg">
+              <div className="flex items-center gap-4 w-full md:w-auto">
+                <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-50 rounded-lg">
                   <img
                     src={app.image}
                     alt={app.title}
-                    className="w-12 h-12 object-contain"
+                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-lg text-gray-800">
+                  <h3 className="font-bold text-base md:text-lg text-gray-800">
                     {app.title}
                   </h3>
-                  <div className="flex items-center gap-4 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center">
-                      <img src={downloadIcon} className="w-4 h-4 " alt="" />
-
+                  <div className="flex items-center gap-2 md:gap-4 text-xs md:text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-1">
+                      <img
+                        src={downloadIcon}
+                        className="w-3 h-3 md:w-4 md:h-4"
+                        alt=""
+                      />
                       <p className="font-semibold text-green-400">
                         {app.downloads}
                       </p>
                     </div>
-                    <div className="flex items-center">
-                      <img src={ratingIcon} className="w-4 h-4 " alt="" />
+                    <div className="flex items-center gap-1">
+                      <img
+                        src={ratingIcon}
+                        className="w-3 h-3 md:w-4 md:h-4"
+                        alt=""
+                      />
                       <p className="font-semibold text-orange-400">
                         {app.ratingAvg}
                       </p>
@@ -145,7 +152,7 @@ const InstalledApp = () => {
               </div>
               <button
                 onClick={() => handleUninstall(app.id, app.title)}
-                className="bg-[#00d390] hover:bg-[#00c085] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                className="bg-[#00d390] hover:bg-[#00c085] text-white px-4 md:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm md:text-base w-full md:w-auto"
               >
                 Uninstall
               </button>

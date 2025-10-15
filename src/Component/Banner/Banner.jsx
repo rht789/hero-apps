@@ -4,12 +4,12 @@ import heroImg from "../../assets/hero.png";
 const Banner = () => {
   return (
     <div>
-      <div className="text-center px-2 md:px-4">
-        <h1 className="text-5xl font-bold m-2 mt-8">
+      <div className="text-center px-4 md:px-8">
+        <h1 className="text-3xl md:text-5xl font-bold m-2 mt-6 md:mt-8">
           We Build <br />
           <span className="text-[#632EE3]">Productive</span> Apps
         </h1>
-        <p className="text-md text-gray-500">
+        <p className="text-sm md:text-md text-gray-500 max-w-2xl mx-auto">
           At HERO.IO, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting.{" "}
           <br className="hidden md:block" /> Our goal is to turn your ideas into
@@ -20,7 +20,7 @@ const Banner = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="btn m-3 md:m-6 bg-white">
+          <button className="btn m-2 md:m-6 bg-white text-xs md:text-sm">
             <img
               src="https://www.citypng.com/public/uploads/preview/hd-google-play-playstore-logo-symbol-png-701751694777134cuw3jc7voo.png"
               alt="Google Play Store Logo"
@@ -34,7 +34,7 @@ const Banner = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="btn m-3 md:m-6 bg-white">
+          <button className="btn m-2 md:m-6 bg-white text-xs md:text-sm">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/2048px-App_Store_%28iOS%29.svg.png"
               alt="Apple App Store Logo"

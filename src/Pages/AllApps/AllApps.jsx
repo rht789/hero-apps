@@ -60,19 +60,19 @@ const AllApps = () => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center px-20 ">
-        <p>{`(${filteredApps.length}) App Found`}</p>
-        <form>
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-20 gap-4 md:gap-0">
+        <p className="text-sm md:text-base">{`(${filteredApps.length}) App Found`}</p>
+        <form className="w-full md:w-auto">
           <input
             type="text"
             placeholder="Search Your App"
-            className="input input-bordered input-primary w-full max-w-xs"
+            className="input input-bordered input-primary w-full md:max-w-xs"
             onChange={(e) => handleSearch(e)}
           />
         </form>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-20 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-20 py-6 md:py-8">
         {isLoading ? (
           <div className="col-span-full">
             <Loader />
