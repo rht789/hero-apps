@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
@@ -29,7 +29,32 @@ const AppDetails = () => {
   const { appId } = useParams();
   const parsedAppId = parseInt(appId);
 
+  const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    const installedApps = JSON.parse(
+      localStorage.getItem("installedApps") || "[]"
+    );
+    setIsInstalled(installedApps.includes(parsedAppId));
+  }, [parsedAppId]);
+
+  const handleInstall = () => {
+    const installedApps = JSON.parse(
+      localStorage.getItem("installedApps") || "[]"
+    );
+
+    if (!installedApps.includes(parsedAppId)) {
+      const updatedApps = [...installedApps, parsedAppId];
+      localStorage.setItem("installedApps", JSON.stringify(updatedApps));
+      setIsInstalled(true);
+    }
+  };
+
   const app = apps.find((app) => app.id === parsedAppId);
+
+  if (!app) {
+    return <AppNotFound />;
+  }
 
   const {
     image,
@@ -48,12 +73,12 @@ const AppDetails = () => {
 
   return (
     <div className="mx-8">
-      <div className="flex justify-start items-center gap-8 my-4">
-        <div className="w-[300px] h-[300px] flex items-center justify-center shadow-sm bg-white">
+      <div className="flex justify-start items-center gap-8 my-4 border-b-2 border-gray-300 pb-8">
+        <div className="w-[300px] h-[300px] flex items-center justify-center shadow-sm bg-white p-4">
           <img src={image} alt="" />
         </div>
-        <div>
-          <div className="border-b-2 border-gray-300 pb-2 mb-2">
+        <div className="flex-1">
+          <div className="border-b-2 border-gray-300 pb-2 mb-2 ">
             <h3 className="text-2xl font-semibold">{title}</h3>
             <p className="text-xs text-gray-500">
               Developed by{" "}
@@ -78,8 +103,16 @@ const AppDetails = () => {
             </div>
           </div>
           <div className="mt-4">
-            <button className="p-2 rounded-lg bg-[#00d390] text-white">
-              Install Now ({size} MB)
+            <button
+              className={`p-2 rounded-lg text-white transition-colors duration-200 ${
+                isInstalled
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-[#00d390] hover:bg-[#00c085]"
+              }`}
+              onClick={handleInstall}
+              disabled={isInstalled}
+            >
+              {isInstalled ? "Installed" : `Install Now (${size} MB)`}
             </button>
           </div>
         </div>
