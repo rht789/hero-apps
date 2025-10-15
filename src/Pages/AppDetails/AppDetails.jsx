@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
+import AppNotFound from "../../Component/ErrorPage/AppNotFound";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -45,9 +46,6 @@ const AppDetails = () => {
   console.log("app:", app);
   console.log("ratings data:", ratings);
 
-  if (!app) {
-    return <div>Loading...</div>;
-  }
   return (
     <div className="mx-8">
       <div className="flex justify-start items-center gap-8 my-4">
@@ -86,7 +84,7 @@ const AppDetails = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 mb-8">
+      <div className="mt-8 mb-8 border-b-2 border-gray-300 pb-4">
         <h4 className="text-xl font-semibold mb-4">Rating Distribution</h4>
         {ratings && ratings.length > 0 ? (
           <div style={{ width: "100%", height: "400px" }}>
@@ -126,6 +124,10 @@ const AppDetails = () => {
         ) : (
           <div>No rating data available</div>
         )}
+      </div>
+      <div className="mb-8">
+        <h4 className="text-xl font-semibold mb-4">Description</h4>
+        <p className="text-gray-700">{description}</p>
       </div>
     </div>
   );

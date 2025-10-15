@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../AppCard/AppCard";
 import { AiTwotoneAppstore } from "react-icons/ai";
+import AppNotFound from "../../Component/ErrorPage/AppNotFound";
 
 const AllApps = () => {
   const allApps = useLoaderData();
@@ -40,9 +41,15 @@ const AllApps = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-20 py-8">
-        {filteredApps.map((app) => (
-          <AppCard key={app.id} app={app}></AppCard>
-        ))}
+        {filteredApps.length > 0 ? (
+          filteredApps.map((app) => <AppCard key={app.id} app={app}></AppCard>)
+        ) : searchValue ? (
+          <div className="col-span-full">
+            <AppNotFound />
+          </div>
+        ) : (
+          allApps.map((app) => <AppCard key={app.id} app={app}></AppCard>)
+        )}
       </div>
     </div>
   );
